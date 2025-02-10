@@ -1,5 +1,5 @@
 from .cookies_impl import Cookies
-from .core import get_flights_from_filter, get_flights
+from .core import get_flights_from_filter, get_flights, fetch, fallback_playwright_fetch, parse_response
 from .filter import create_filter
 from .flights_impl import Airport, FlightData, Passengers, TFSData
 from .schema import Flight, Result
@@ -17,4 +17,7 @@ __all__ = [
     "search_airport",
     "Cookies",
     "get_flights",
+    "fetch",
+    "fallback_playwright_fetch",
+    "parse_response"
 ]
